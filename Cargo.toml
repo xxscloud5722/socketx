@@ -1,0 +1,39 @@
+[package]
+name = "socketx"
+version = "0.1.0"
+authors = ["Cat <cat@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "3.3.2"
+actix = "0.10.0"
+actix-web-actors = "3.0.0"
+futures = "*"
+futures-core = "*"
+futures-util = "*"
+log4rs = "1.0.0"
+log = "0.4.14"
+yaml-rust = "0.4"
+shaku = "0.6.1"
+lazy_static = "1.4.0"
+#time = "0.2.25"
+#url = "*"
+urlencoding = "1.1.1"
+libflate = "1.0.3"
+serde = "*"
+serde_json = "*"
+actix-multipart = "*"
+thiserror = "*"
+async-trait = "0.1.42"
+chrono = "0.4.19"
+
+[source.crates-io]
+registry = "https://github.com/rust-lang/crates.io-index"
+replace-with = 'ustc'
+[source.ustc]
+registry = "https://mirrors.ustc.edu.cn/crates.io-index"
+
+# cargo build --release --target=x86_64-unknown-linux-musl
+# CROSS_COMPILE=x86_64-linux-musl- cargo build --release --target x86_64-unknown-linux-musl
